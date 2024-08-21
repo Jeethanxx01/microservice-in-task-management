@@ -57,9 +57,7 @@ mvn spring-boot:run
 
 ![App Screenshot](https://github.com/Jeethanxx01/TD/blob/main/images/image1.png)
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/Jeethanxx01/TD/blob/main/images/image2.png)
 
 ## License
 
