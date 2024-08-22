@@ -55,7 +55,7 @@ mvn spring-boot:run
 
 ## Screenshots
 
-![App Screenshot](https://github.com/Jeethanxx01/TD/blob/main/images/image1.png)
+
 
 ![App Screenshot](https://github.com/Jeethanxx01/TD/blob/main/images/image2.png)
 
