@@ -53,13 +53,6 @@ mvn spring-boot:run
 - Open your browser and go to http://localhost:8080.
 - Start managing your tasks with ease!
 
-## Screenshots
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 ## License
 
