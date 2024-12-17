@@ -3,8 +3,6 @@
 ## Overview
 **Team Task Management Software** is a robust application designed to streamline task management between administrators and users. The system enables administrators to assign, monitor, and review tasks, while users can track, complete, and submit their work seamlessly. The application is powered by a **React-Redux frontend** and a **Spring Boot microservice backend**.
 
----
-
 ## Features
 
 ### Admin Features:
@@ -30,7 +28,6 @@
 - **Progress Monitoring**:  
   - Tasks accepted by the admin will be moved to the **Done** section.
 
----
 
 ## Tech Stack
 
@@ -56,8 +53,6 @@ The backend is split into multiple microservices for scalability:
 5. **Task Service**: Manages task creation, updates, and assignments.  
 6. **Notification Service**: Sends notifications for task updates.
 
----
-
 ## Installation and Setup
 
 ### Prerequisites:
@@ -65,8 +60,6 @@ The backend is split into multiple microservices for scalability:
 - **Java Development Kit (JDK)** (for backend)
 - **MySQL** (database)
 - **Maven** (build tool for Spring Boot)
-
----
 
 
 
