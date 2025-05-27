@@ -159,7 +159,13 @@ We welcome contributions! Please see `CONTRIBUTING.md` for details.
 
 ## 📄 License
 
-This project is licensed under the [License Name] - see the [LICENSE.md](LICENSE.md) file for details.
+<div align="center">
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+</div>
 
 
 
