@@ -1,152 +1,166 @@
-# Team Task Management Software
+# 🚀 Team Task Management Software
 
-## Overview
-**Team Task Management Software** is a robust application designed to streamline task management between administrators and users. The system enables administrators to assign, monitor, and review tasks, while users can track, complete, and submit their work seamlessly. The application is powered by a **React-Redux frontend** and a **Spring Boot microservice backend**.
+<div align="center">
 
-## Features
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-2.7.x-brightgreen)
+![React](https://img.shields.io/badge/React-18.x-blue)
 
-### Admin Features:
-- **Task Management**:  
-  - Create tasks with details such as **title**, **description**, **tags**, **images**, and **deadline**.  
-  - Assign tasks to specific users.  
-  - View **unassigned tasks**.  
-  - Edit existing tasks.  
-- **Task Review**:  
-  - Review submitted tasks.  
-  - Accept or decline completed work with remarks.  
-- **Monitoring**:  
-  - View already completed tasks.
+*A modern microservice-based task management solution for teams*
 
-### User Features:
-- **Task Tracking**:  
-  - View assigned tasks.  
-  - Complete tasks before the deadline.  
-- **Task Submission**:  
-  - Submit tasks with links and remarks for review.  
-  - Check feedback from the admin.  
-  - Resubmit tasks if declined.  
-- **Progress Monitoring**:  
-  - Tasks accepted by the admin will be moved to the **Done** section.
+</div>
 
+## 📋 Overview
 
-## Tech Stack
+**Team Task Management Software** is a robust application designed to streamline task management within teams, facilitating seamless interaction between administrators and users. Leveraging a **modern microservice architecture**, this application empowers administrators with comprehensive tools for task assignment, monitoring, and review, while providing users with an intuitive platform to track, complete, and submit their work.
 
-### Frontend:
-- **React**: Core UI library.  
-- **Redux Toolkit**: State management.  
-- **React Router DOM**: Routing between user and admin panels.  
-- **Tailwind CSS**: Utility-first CSS framework for styling.  
-- **Material UI**: Prebuilt React components for an elegant user interface.
+## ✨ Key Features
 
-### Backend:
-- **Spring Boot**: Java-based framework for microservices.  
-- **Hibernate**: ORM for database management.  
-- **JPARepository**: Data access layer.  
-- **JWT Token**: Secure authentication and authorization.  
+### 👨‍💼 For Administrators
 
-### Microservices:
-The backend is split into multiple microservices for scalability:  
-1. **Eureka Server**: Service discovery server.  
-2. **Gateway Server**: API gateway for routing requests.  
-3. **User Service**: Manages user and admin credentials.  
-4. **Submission Service**: Handles user task submissions.  
-5. **Task Service**: Manages task creation, updates, and assignments.  
-6. **Notification Service**: Sends notifications for task updates.
+* **📝 Task Creation & Management**
+  * Create, edit, and manage tasks with detailed information
+  * Include title, description, tags, images, and deadlines
+* **👥 User-Specific Assignment**
+  * Assign tasks to individual users for clear accountability
+* **📊 Task Monitoring**
+  * Gain visibility into unassigned and completed tasks
+* **✅ Efficient Review Process**
+  * Review submitted tasks
+  * Provide feedback
+  * Manage task status (accept/decline) with remarks
 
-## Installation and Setup
+### 👤 For Users
 
-### Prerequisites:
-- **Node.js** (for frontend)
-- **Java Development Kit (JDK)** (for backend)
-- **MySQL** (database)
-- **Maven** (build tool for Spring Boot)
+* **📋 Personalized Task Tracking**
+  * View all assigned tasks and their respective deadlines
+* **✅ Effortless Task Completion & Submission**
+  * Complete tasks and submit them for review
+  * Include relevant links and remarks
+* **🔄 Feedback Loop**
+  * Check administrator feedback
+  * Easily resubmit declined tasks
+* **📈 Progress Visualization**
+  * Accepted tasks automatically move to "Done" section
+  * Clear progress tracking
 
+## 🛠️ Tech Stack
 
+### Frontend
 
-## Getting Started.
+<div align="center">
 
-### Backend Setup:
+![React](https://img.shields.io/badge/React-18.x-blue?style=for-the-badge)
+![Redux](https://img.shields.io/badge/Redux%20Toolkit-1.9.x-purple?style=for-the-badge)
+![Tailwind](https://img.shields.io/badge/Tailwind%20CSS-3.x-38B2AC?style=for-the-badge)
+![Material UI](https://img.shields.io/badge/Material%20UI-5.x-0081CB?style=for-the-badge)
 
-1. Clone the repository:
+</div>
+
+* **React:** A leading JavaScript library for building dynamic user interfaces
+* **Redux Toolkit:** Simplifying state management for complex applications
+* **React Router DOM:** Enabling smooth navigation between different sections
+* **Tailwind CSS:** A utility-first CSS framework for rapid and responsive UI development
+* **Material UI:** A comprehensive library of prebuilt React components
+
+### Backend
+
+<div align="center">
+
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-2.7.x-brightgreen?style=for-the-badge)
+![Hibernate](https://img.shields.io/badge/Hibernate-5.x-59666C?style=for-the-badge)
+![JWT](https://img.shields.io/badge/JWT-Auth-blue?style=for-the-badge)
+
+</div>
+
+* **Spring Boot:** A robust framework for building production-ready applications
+* **Hibernate:** Powerful Object-Relational Mapping (ORM) tool
+* **JPARepository:** Simplifying data access with Spring Data JPA
+* **JWT Token:** Implementing secure authentication and authorization
+
+## 🏗️ Architecture: Microservices
+
+The backend is architected as a set of interconnected microservices:
+
+<div align="center">
+
+```mermaid
+graph LR
+    A[Frontend] --> B[Gateway Server]
+    B --> C[Eureka Server]
+    B --> D[User Service]
+    B --> E[Task Service]
+    B --> F[Submission Service]
+    B --> G[Notification Service]
+```
+
+</div>
+
+1. **🔍 Eureka Server:** Centralized service discovery
+2. **🚪 Gateway Server:** API gateway for routing and authentication
+3. **👤 User Service:** User authentication and profiles
+4. **📤 Submission Service:** Task submission and review process
+5. **📋 Task Service:** Task-related operations
+6. **🔔 Notification Service:** Event notifications
+
+## 🚀 Installation and Setup
+
+### Prerequisites
+
+* Node.js (for frontend)
+* Java Development Kit (JDK)
+* MySQL (database)
+* Maven (build tool)
+
+### Getting Started
+
+1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-repo/team-task-management-backend.git
-   cd team-task-management-backend
-   ``` 
+   git clone https://github.com/your-repo/team-task-management.git
+   cd team-task-management
+   ```
 
-2.Start the Eureka Server:
-```bash
- cd eureka-server
- mvn spring-boot:run
- ```
+2. **Backend Setup:**
+   ```bash
+   # Start Eureka Server
+   cd backend/eureka-server
+   mvn spring-boot:run
 
-3.Start the Eureka Server:
-```bash
-Copy code
-cd eureka-server
-mvn spring-boot:run
-```
+   # Start Gateway Server
+   cd ../gateway-server
+   mvn spring-boot:run
 
-4.Start the Gateway Server:
-```bash
-cd gateway-server
-mvn spring-boot:run
-```
-5.Start individual microservices:
+   # Start Microservices
+   cd ../[service-name]-service
+   mvn spring-boot:run
+   ```
 
-- User Service
-- Task Service
- -  Submission Service
-  - Notification Service
+3. **Frontend Setup:**
+   ```bash
+   cd frontend
+   npm install
+   npm start
+   ```
 
-```bash
-mvn spring-boot:run
-```
-Ensure the database is configured in application.properties for each service.
+The application will be available at `http://localhost:3000`
 
-   
-### Frontend Setup:
+## 🤝 Contributing
 
-1.Install dependencies:
+We welcome contributions! Please see `CONTRIBUTING.md` for details.
 
-```bash
-npm install
-```
-2.Start the development server:
+### How to Contribute
 
-```bash
-npm start
-```
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-The application will run on http://localhost:3000.
+## 📄 License
+
+This project is licensed under the [License Name] - see the [LICENSE.md](LICENSE.md) file for details.
 
 
-## Usage:
-
-- Admin Login: Use admin credentials to access the admin panel.
-- User Login: Use user credentials to check and manage tasks.
-- Follow the interface to perform task creation, assignment, submission, and review.
 
 
-## Screenshots
-
-### Admin Panel:
-![App Screenshot](https://github.com/Jeethanxx01/microservice-architecture/blob/main/images/Screenshot%20from%202024-12-17%2014-02-13.png)
-
-![App Screenshot](https://github.com/Jeethanxx01/microservice-architecture/blob/main/images/Screenshot%20from%202024-12-17%2014-02-30.png)
-
-![App Screenshot](https://github.com/Jeethanxx01/microservice-architecture/blob/main/images/Screenshot%20from%202024-12-17%2014-02-43.png)
-
-### User Panel:
-![App Screenshot](https://github.com/Jeethanxx01/microservice-architecture/blob/main/images/Screenshot%20from%202024-12-17%2014-04-57.png)
-
-![App Screenshot](https://github.com/Jeethanxx01/microservice-architecture/blob/main/images/Screenshot%20from%202024-12-17%2014-04-57.png)
-
-### Sign in :
-
-![App Screenshot](https://github.com/Jeethanxx01/microservice-architecture/blob/main/images/Screenshot%20from%202024-12-17%2014-06-36.png)
-
-### Log in :
-![App Screenshot](https://github.com/Jeethanxx01/microservice-architecture/blob/main/images/Screenshot%20from%202024-12-17%2014-06-04.png)
-
-### Eureka Server:
-![App Screenshot](https://github.com/Jeethanxx01/microservice-architecture/blob/main/images/Screenshot%20from%202024-12-17%2009-58-16.png)
