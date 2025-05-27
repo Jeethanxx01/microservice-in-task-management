@@ -59,7 +59,7 @@ const SideBar = () => {
           <Avatar
             sx={{ width: "8rem", height: "8rem" }}
             className="border-2 border-[#c24dd0]"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXdF5C2lOWqFR1M6v_FZtYzr5MLpESDFMfnw&s"
+            src="https://res.cloudinary.com/dxoqwusir/image/upload/v1703852575/Code_With_Zosh_e0bbz7.png"
             alt=""
           />
         </div>

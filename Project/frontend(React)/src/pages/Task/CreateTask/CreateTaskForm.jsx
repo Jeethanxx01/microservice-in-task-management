@@ -26,7 +26,7 @@ const validationSchema = Yup.object().shape({
   deadline: Yup.date().required("Deadline is required"),
 });
 
-const tags = ["Engine Optimization", "Aerodynamics Analysis", "Pit Stop Strategy", "Telemetry Data Analysis", "Suspension Tuning"];
+const tags = ["Angular", "React", "Vuejs", "Spring Boot", "Node js", "Python"];
 
 const style = {
   position: "absolute",

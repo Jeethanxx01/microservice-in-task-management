@@ -17,14 +17,19 @@ const Auth = () => {
           <div class="front">
             <img
               class=""
-              src="https://www.team-bhp.com/forum/attachments/motor-sports/1277102d1408778915-baja-sae-india-2012-team-conrods-10367746_691292864251461_3323130567599239096_n.jpg"
+              src="https://images.pexels.com/photos/13073600/pexels-photo-13073600.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt=""
             />
-            
+            <div class="text">
+              <span class="text-1">
+              Success is built upon well-organized tasks
+              </span>
+              <span class="text-2 text-xs">Let's get connected </span>
+            </div>
           </div>
           <div class="back">
             <img
-              src="https://kjssc.somaiya.edu.in/upload_file/images20/62b54f8d314ee.png"
+              src="https://images.pexels.com/photos/12679942/pexels-photo-12679942.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt=""
             />
           </div>

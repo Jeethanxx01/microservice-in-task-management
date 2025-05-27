@@ -43,7 +43,7 @@ const SubmitTaskForm = ({ open, handleClose,taskId }) => {
   const dispatch=useDispatch();
   const [formData, setFormData] = useState({
     title: "",
-    Link: "",
+    githubLink: "",
   });
 
   const handleChange = (e) => {
@@ -82,9 +82,9 @@ dispatch(submitTask({taskId,githubLink:formData.githubLink}))
             </Grid>
             <Grid item xs={12}>
               <TextField
-                label="URL"
+                label="Github URL"
                 fullWidth
-                name="Link"
+                name="githubLink"
                 value={formData.githubLink}
                 onChange={handleChange}
               />
